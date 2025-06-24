@@ -1,0 +1,35 @@
+
+
+POST http://localhost:4001/api/users/add
+Content-Type: application/json
+
+{
+  "tzkid": "TZK25V001",
+  "firstName": "adnan",
+  "gender": "male"
+}
+
+
+
+
+###
+
+{
+  "teckziteId": "TZ2K25V001"
+}
+
+
+###
+GET http://localhost:4001/api/rooms/room/TzB-37(SF)
+
+
+###
+GET http://localhost:4001/api/rooms/hostel-stats
+
+
+###
+GET http://localhost:4001/api/students/TZ2K25V030
+
+###
+
+GET http://localhost:4001/api/students/recent-checkins?limit=15
