@@ -15,7 +15,7 @@ const AllocateRoom = () => {
     const fetchRooms = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4001/api/rooms/hostel-stats"
+          "https://hospitality-management-system-nljq.onrender.com/api/rooms/hostel-stats"
         );
         const data = await response.json();
 
