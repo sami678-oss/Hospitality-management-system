@@ -48,7 +48,7 @@ const Checkin = ({ setDashboardStats }) => {
       : { tzkid, gender, action: "checkin" }; 
 
     try {
-      const response = await fetch("http://localhost:4001/api/students/allocate", {
+      const response = await fetch("https://hospitality-management-system-nljq.onrender.com/api/students/allocate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(allocationRequest),
@@ -155,14 +155,14 @@ const Checkin = ({ setDashboardStats }) => {
      
 
 <button
-  onClick={() => window.location.href = "http://localhost:4001/api/students/export-excel/male"}
+  onClick={() => window.location.href = "https://hospitality-management-system-nljq.onrender.com/api/students/export-excel/male"}
   className="w-full mt-4 rounded-md bg-green-600 py-2 font-medium text-white transition-colors hover:bg-blue-700"
 >
   Export Male Excel
 </button>
 
 <button
-  onClick={() => window.location.href = "http://localhost:4001/api/students/export-excel/female"}
+  onClick={() => window.location.href = "https://hospitality-management-system-nljq.onrender.com/api/students/export-excel/female"}
   className="w-full mt-4 rounded-md bg-pink-600 py-2 font-medium text-white transition-colors hover:bg-pink-700"
 >
   Export Female Excel
