@@ -27,7 +27,7 @@ const Checkout = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:4001/api/students/allocate",
+        "https://hospitality-management-system-nljq.onrender.com/api/students/allocate",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -104,7 +104,7 @@ const Checkout = () => {
         <button
           onClick={() =>
             (window.location.href =
-              "http://localhost:4001/api/students/exports-excel/male")
+              "https://hospitality-management-system-nljq.onrender.com/api/students/exports-excel/male")
           }
           className="w-full mt-4 rounded-md bg-green-600 py-2 font-medium text-white transition-colors hover:bg-blue-700"
         >
@@ -114,7 +114,7 @@ const Checkout = () => {
         <button
           onClick={() =>
             (window.location.href =
-              "http://localhost:4001/api/students/exports-excel/female")
+              "https://hospitality-management-system-nljq.onrender.com/api/students/exports-excel/female")
           }
           className="w-full mt-4 rounded-md bg-pink-600 py-2 font-medium text-white transition-colors hover:bg-pink-700"
         >
