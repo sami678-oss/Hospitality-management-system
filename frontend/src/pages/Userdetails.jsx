@@ -37,7 +37,7 @@ const UserDetails = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:4001/api/students/${id}`, {
+      const response = await fetch(`https://hospitality-management-system-nljq.onrender.com/api/students/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
