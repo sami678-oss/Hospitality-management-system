@@ -12,7 +12,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchHostelStats = async () => {
       try {
-        const response = await fetch("http://localhost:4001/api/rooms/hostel-stats");
+        const response = await fetch("https://hospitality-management-system-nljq.onrender.com/api/rooms/hostel-stats");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -31,7 +31,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchRecentCheckIns = async () => {
       try {
-        const response = await fetch("http://localhost:4001/api/students/recent-checkins");
+        const response = await fetch("https://hospitality-management-system-nljq.onrender.com/api/students/recent-checkins");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -50,7 +50,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchTotalArrivals = async () => {
       try {
-        const response = await fetch("http://localhost:4001/api/total-arrivals");
+        const response = await fetch("https://hospitality-management-system-nljq.onrender.com/api/total-arrivals");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -69,7 +69,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchTotalStudentsLeft = async () => {
       try {
-        const response = await fetch("http://localhost:4001/api/total-left");
+        const response = await fetch("https://hospitality-management-system-nljq.onrender.com/api/total-left");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
